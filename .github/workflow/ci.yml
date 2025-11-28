@@ -2,9 +2,9 @@ name: CI/CD Node.js Pipeline # Nom visible du pipeline
 
 on:
     push:
-        branches: [etudiant3]  # Déclenche le pipeline sur les pushs vers la branche 'etudiant3'
+        branches: [etudiant3]  # Déclenche le pipeline sur les pushs vers la branche 'main'
     pull_request:
-        branches: [etudiant3]  # Déclenche le pipeline sur les pull requests vers la branche 'etudiant3'
+        branches: [etudiant3]  # Déclenche le pipeline sur les pull requests vers la branche 'main'
 
 jobs:
     test:
@@ -34,7 +34,7 @@ jobs:
         steps:
         - name: Checkout repository
           uses: actions/checkout@v4
-
+        
         - name: Deploy to Github Pages
           uses: peaceiris/actions-gh-pages@v3
           with:
