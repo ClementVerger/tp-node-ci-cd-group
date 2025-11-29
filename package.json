@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "echo \"No lint configured\"",
+    "test": "jest",
+    "build": "echo \"Build done\""
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/ClementVerger/tp-node-ci-cd-group#readme",
   "devDependencies": {
+    "eslint": "^9.39.1",
     "jest": "^30.2.0"
   }
 }
