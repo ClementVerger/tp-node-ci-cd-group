@@ -1,0 +1,1 @@
+Passage de la version 1.0.0 à la version 1.1.0
